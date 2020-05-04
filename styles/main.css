@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap");
 @import "intlTelInput.min.css";
 
 .iti__flag {
@@ -8,6 +9,14 @@
   .iti__flag {
     background-image: url("../img/flags@2x.png");
   }
+}
+
+.fira {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.pt-sans {
+  font-family: "PT Sans", sans-serif;
 }
 
 .container {
