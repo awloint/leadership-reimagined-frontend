@@ -31,3 +31,14 @@
 #logo {
   width: 8em;
 }
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
