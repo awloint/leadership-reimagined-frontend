@@ -1,16 +1,24 @@
-@import 'intlTelInput.min.css';
+@import "intlTelInput.min.css";
 
-.iti__flag {background-image: url("../img/flags.png");}
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .iti__flag {background-image: url("../img/flags@2x.png");}
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
 }
 
 .container {
-    justify-content: center;
-    margin-top: 6rem;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 .iti {
   width: 100%;
+}
+
+#logo {
+  width: 8em;
 }
