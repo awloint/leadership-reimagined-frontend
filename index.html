@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom Conference Registration</title>
     <!-- Bootstrap stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Load Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <!-- intlTelInput.css -->
+   <link rel="stylesheet" href="./styles/intlTelInput.min.css">
     <!-- My main css file -->
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <div class="container" style="max-width:90%;">
@@ -31,23 +33,23 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="firstName">First Name</label>
-                    <input type="email" class="form-control" id="firstName" placeholder="Your First Name" required>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Your First Name" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Your Last Name" required>
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Your Last Name" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email" required>
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputPhone">Phone Number</label>
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="Your Phone Number" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="city">City</label>
-                    <input type="text" class="form-control" id="city" placeholder="Your City" required>
+                    <input type="text" class="form-control" name="city" id="city" placeholder="Your City" required>
                 </div>
                 <div class="col form-group">
                     <label for="country">Which country do you reside in?</label>
@@ -296,18 +298,27 @@
                     </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Get Zoom Link!</button>
+            <button type="submit" class="btn btn-danger">Get Zoom Link!</button>
         </div>
     </form>
 
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
+        <!-- Bootstrap cdn -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <!-- intl script -->
+    <script src="./scripts/intlTelInput.min.js"></script>
+    <!-- util script -->
+    <script src="./scripts/utils.js"></script>
+    <!-- Main javascript file -->
+    <script src="scripts/index.js"></script>
+
 </body>
 </html>
