@@ -56,3 +56,11 @@ form {
 .attribution {
   margin: 4rem;
 }
+
+.text-center {
+  text-align: center;
+}
+
+#strategies {
+  display: none;
+}

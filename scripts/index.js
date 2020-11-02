@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     val = val.toLowerCase()
   }
 
+  const strategies = document.querySelector('#strategies')
+  document.querySelector('#yes').onclick = e => {
+    strategies.style.display = 'initial'
+  }
+  document.querySelector('#no').onclick = e => {
+    strategies.style.display = 'none'
+  }
+
   // Add intl-tel-input
   window.intlTelInputGlobals.loadUtils('scripts/utils.js')
   var input = document.querySelector('#phone')
@@ -59,12 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
         'Loading <span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>'
 
       // Create Form Variables
-      const firstName = document.querySelector("input[name='firstName'").value
-      const lastName = document.querySelector("input[name='lastName'").value
-      const email = document.querySelector("input[name='email'").value
-      const phone = document.querySelector("input[name='full_phone'").value
-      const city = document.querySelector("input[name='city'").value
-      const country = document.querySelector("select[name='country'").value
+      const firstName = document.querySelector("input[name='firstName']").value
+      const lastName = document.querySelector("input[name='lastName']").value
+      const email = document.querySelector("input[name='email']").value
+      const phone = document.querySelector("input[name='full_phone']").value
+      const city = document.querySelector("input[name='city']").value
+      const country = document.querySelector("select[name='country']").value
+      const organisationalChallenges = document.querySelector(
+        "textarea[name='organisationalChallenges']"
+      ).value
+      const alterStrategies = document.querySelector(
+        "input[name='alterStrategies']"
+      ).value
+      const strategiesImplemented = document.querySelector(
+        "textarea[name='strategiesImplemented']"
+      ).value
 
       // construct formData
       const formBody = {
@@ -73,7 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
         email: email,
         phone: phone,
         city: city,
-        country: country
+        country: country,
+        organisationalChallenges: organisationalChallenges,
+        alterStrategies: alterStrategies,
+        strategiesImplemented: strategiesImplemented
       }
 
       // send it for processing
