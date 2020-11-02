@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // send it for processing
-      fetch('https://zoom-conference.herokuapp.com/', {
+      fetch('https://leadership-reimagined.herokuapp.com/', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'
