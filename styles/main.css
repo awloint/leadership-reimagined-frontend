@@ -60,3 +60,7 @@ form {
 .text-center {
   text-align: center;
 }
+
+#strategies {
+  display: none;
+}
