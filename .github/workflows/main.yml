@@ -13,7 +13,7 @@ jobs:
     - name: rsync deployments
       uses: burnett01/rsync-deployments@4.1
       with:
-        switches: -avzr --delete --exclude="package.json, package-lock.json"
+        switches: -avzr --delete --exclude="package.json" --exclude="package-lock.json"
         path: /
         remote_path: public_html/leadership-reimagined
         remote_host: ${{ secrets.DEPLOY_HOST }}
